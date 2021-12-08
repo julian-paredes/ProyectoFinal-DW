@@ -1,0 +1,475 @@
+/* Inicio de archivo css para estilos */
+
+@import 'base/extends';
+
+.parrafo-1, .parrafo-2, .p-main-2{
+    font-size: 1.5em;
+    @extend %estiloTextos;
+    
+}
+
+.titulo-contact {
+    @extend %estiloTextos;
+}
+
+@import 'base/maps';
+
+.img-principal{
+    height: map-get($imagenPrincipal, img-height );
+    width: map-get($imagenPrincipal, img-width );
+    border: map-get($imagenPrincipal, img-border);
+}
+
+@import 'base/mixin'; 
+
+.p-transform-1:hover{
+    @include transformaciones(scale(2));
+}
+
+.p-transform-2:hover {
+    @include transformaciones(scale(2));
+}
+.p-transform-3:hover {
+    @include transformaciones(scale(2));
+}
+.title-transform:hover {
+    @include transformaciones(scale(2));
+}
+/* Reinicio de estilos */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo agregar imagen de fondo */
+
+.fondo {
+    background-image: url("../media/images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Estilo de links */
+a {
+    text-decoration: none;
+    color: rgb(114, 167, 35);
+    
+}
+
+/* Estilo a lista desordenada */
+ul{
+    list-style: none;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: bold;
+}
+
+
+/* Estilos Header */
+
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Logo de la pag */
+
+.logo {
+    padding-top: 1em;
+    padding-left: 1em;
+
+}
+
+/* Estilos a clases utilizando flexbox */
+
+.menu-container {
+
+    margin: 1em;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+
+
+/* Carrito */
+
+.carrito {
+    width: 1.5m;
+    height: 1.5em;
+}
+
+/* Estilos - Main */
+/* Imagen Principal */
+
+.img-principal {
+    height: auto;
+    width: 100%;
+    border: 0;
+    
+
+}
+
+/* Titulo principal */
+
+.titulo{
+    color: green;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+    margin: 1em 0em;
+}
+
+
+/* Imagenes - Main */
+.img-container-main {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0em;
+    flex-wrap: wrap;
+
+}
+
+.img-main-1, .img-main-2, .img-main-3 {
+
+    display: flex;
+    height: 200px;
+    width: auto;
+
+}
+
+ 
+/* Estilos - Main */
+/* Párrafos */
+
+
+.parrafo-3, .parrafo-4, .p-main-1, .p-main-3{
+    color: rgb(114, 167, 35);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p-container-main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.5em ;
+    margin-bottom: 5em;
+    flex-wrap: wrap;
+
+}
+
+.p-main-1, .p-main-2, .p-main-3 {
+    font-size: 1.5em;
+}
+
+/*Grid - Seccion "Nosotros" - Estilos*/
+
+.grid-container-about {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 0px;
+    }
+    
+    .grid-parrafo { 
+        grid-area: 1 / 1 / 2 / 2;
+        
+        
+    }
+    .grid-imagen { 
+        grid-area: 1 / 2 / 2 / 3; 
+        
+    }
+
+    .img-about {
+        height: auto;
+        width: 100%;
+    }
+
+    .parrafo-about {
+        align-self: center;
+        
+    }
+
+
+/* Seccion "Productos" - Flexbox - Estilos */
+
+.prod-fila1-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.prod-fila2-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.prod1-fila1, .prod2-fila1, .prod1-fila2, .prod2-fila2 {
+    text-align: center;
+}
+
+.img-prod-1, .img-prod-2, .img-prod-3, .img-prod-4 {
+    margin-bottom: 1em;
+}
+
+/*Seccion "Contacto" - Estilos - Grid */
+
+.grid-container-contact {
+    display: grid;;
+    grid-template-columns: auto auto;
+}
+
+.grid-map {
+    grid-area: 1 / 1 /2 / 2;
+}
+
+.grid-form {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+
+
+/* Seccion "Carrito" - Estilos */
+
+.carrito-titulo {
+    text-align: start;
+    margin-left: 2em;
+}
+
+.carrito-container-1, .carrito-container-2, .carrito-container-3 {
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(57, 202, 57);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 3em;
+    flex-wrap: wrap;
+}
+
+.name-carrito-1, .name-carrito-2, .name-carrito-3 {
+    
+    text-align: center;
+    align-self: center;
+    
+}
+
+.titulo-carrito-prod1, .titulo-carrito-prod2, .titulo-carrito-prod3 {
+    margin-bottom: 2em;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    
+
+}
+.button-buy {
+    display: flex;
+    
+
+}
+
+/* Footer */
+
+.terminos{
+    color: rgb(114, 167, 35);
+    font-size: 1.5em;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+
+}
+
+/* Contacto WhatsApp */
+
+.wsp-container{
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    display: flex;
+    justify-content: right;
+    z-index: 100;
+    
+}
+
+.wsp {
+    
+    width: 60px;
+    height: 60px;
+    background-color: rgb(114, 167, 35);
+    border: 1px solid black;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2em;
+    margin-bottom: 2em;
+
+}
+
+.wsp-container .wsp img {
+    width: 80%;
+    height: 80%;
+}
+
+
+/* Footer - Estilo con Flexbox */
+
+.footer-terminos {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+.footer-menu-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Transformaciones Parrafos */
+
+.p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
+
+    transition: all 1s;
+}
+
+.p-transform-1:hover, .p-transform-2:hover, .p-transform-3:hover, .title-transform:hover {
+    transform: scale(2);
+}
+
+/* Estilos para Bootstrap */
+
+.nav-fondo {
+    background: linear-gradient(45deg,rgb(52, 68, 68), rgb(77, 122, 122));
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.5em;
+    color: rgb(114, 167, 35);
+}
+
+.carousel {
+    
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+
+    
+/* MediaQueries para Tablets */
+
+@media only screen and (min-width: 500px) and (max-width: 978px) {
+
+    .p-transform-1, .p-transform-2, .p-transform-3, .title-transform{
+        transition: none !important;
+        transform: none !important;
+    }
+
+    .wsp {                          /* Modificacion de tamaño de boton de WhatsApp */
+        width: 50px;
+        height: 50px;
+        margin-right: 0em;
+        margin-top: 0em;
+    }
+
+    .wsp-container{
+        right: 7px;
+        bottom: -27px;
+    }
+
+}
+
+/* Media Queries para Mobiles */
+
+@media only screen and (max-width: 499px){
+
+
+    .p-transform-1, .p-transform-2, .p-transform-3, .title-transform{       /* Eliminacion de transformaciones en Mobiles */
+        transition: none !important;
+        transform: none !important;
+    }
+
+    .prod1-fila1, .prod1-fila2 {        /* Ajuste de margenes para los botones de la seccion de Productos */
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .titulo {                       /* Ajuste del tamaño de los titulos para mobiles */
+        font-size: 2em;
+    }
+
+    .terminos, .footer-terminos{    /* Ajuste del tamaño de los parrafos del footer */
+        font-size: 0.85em;  
+    }
+
+    .parrafo-1, .parrafo-2 {        /* Ajuste del tamaño de los parrafos en general para mobiles */
+        font-size: 1em;
+    }
+
+    .grid-container-about {         /* Eliminacion del grid para mobiles y desplazamiento de imagen en seccion "Nosotros" */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .grid-container-contact{    /* Eliminacion del grip para mobile en seccion "Contacto" */
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .grid-map {                     /* Ajuste del margen para mobiles del mapa */
+        margin: auto;
+    }
+    .grid-form {
+        margin-top: 2em;
+        font-size: 1em;
+    }
+
+    .titulo-contact {
+        margin-left: 1em;
+    }
+
+    ul{                             /* Ajuste de padding automatico de etiqueta "ul" por libreria de BS */
+        padding-left: 0;
+    }
+
+    .carrito-1, .carrito-2, .carrito-3 {    /* Ajuste de margin entre imagenes del carrito */
+        margin-bottom: 2em;
+        
+    }
+
+    .img-prod-1, .img-prod-2, .img-prod-3, .img-prod-4 {
+        height: 60%;
+        width: 60%;
+    }
+
+    .titulo-carrito-prod1, .titulo-carrito-prod2, .titulo-carrito-prod3 {
+        font-size: 1em;
+    }
+
+    .wsp {                          /* Modificacion de tamaño de boton de WhatsApp */
+        width: 40px;
+        height: 40px;
+        margin-right: 0em;
+        margin-top: 0em;
+    }
+
+    .wsp-container{
+        right: 7px;
+        bottom: -27px;
+    }
+}
+
+/* Fin de archivo css para estilos */

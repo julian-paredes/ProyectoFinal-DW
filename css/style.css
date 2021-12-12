@@ -1,14 +1,39 @@
 @charset "UTF-8";
 /* Inicio de archivo css para estilos */
+/* Reinicio de estilos */
+* {
+  padding: 0;
+  margin: 0;
+}
+
 /* Extends */
-.titulo-contact, .parrafo-1, .parrafo-2, .p-main-2 {
+.titulo-contact, .titulo, .parrafo-1, .parrafo-2, .p-main-2 {
   color: #39ca39;
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
+a {
+  /* Estilo de Links */
+  text-decoration: none;
+  color: #72a723;
+}
+
+ul {
+  /* Estilo de lista desordenada */
+  list-style: none;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: bold;
+}
+
 .parrafo-1, .parrafo-2, .p-main-2 {
   font-size: 1.5em;
+}
+
+.titulo {
+  /* Titulo principal */
+  font-size: 3.5em;
+  margin: 1em 0em;
 }
 
 /* Maps*/
@@ -47,77 +72,47 @@
   -moz-transform: scale(2);
 }
 
-/* Reinicio de estilos */
-* {
-  padding: 0;
-  margin: 0;
-}
-
-/* Estilo agregar imagen de fondo */
+/* Estilos Header */
 .fondo {
+  /* Estilo agregar imagen de fondo */
   background-image: url("../media/images/fondo.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-
-/* Estilo de links */
-a {
-  text-decoration: none;
-  color: #72a723;
-}
-
-/* Estilo a lista desordenada */
-ul {
-  list-style: none;
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: bold;
-}
-
-/* Estilos Header */
-.box {
+.fondo .box {
   display: flex;
   justify-content: center;
 }
-
-/* Logo de la pag */
-.logo {
+.fondo .logo {
+  /* Logo de la pag */
   padding-top: 1em;
   padding-left: 1em;
 }
-
-/* Estilos a clases utilizando flexbox */
-.menu-container {
-  margin: 1em;
+.fondo .nav-fondo {
+  /* NavBar - Menú */
+  background: linear-gradient(45deg, #344444, #4d7a7a);
 }
-
-.menu {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.fondo .nav-fondo .nav-link {
+  font-size: 1.5em;
+  color: #72a723;
 }
-
-/* Carrito */
-.carrito {
+.fondo .nav-fondo .nav-link:hover {
+  text-decoration: underline;
+  color: greenyellow;
+}
+.fondo .nav-fondo .carrito {
+  /* Carrito */
   width: 1.5m;
   height: 1.5em;
 }
 
 /* Estilos - Main */
 /* Imagen Principal */
-.img-principal {
+main .img-principal {
   height: auto;
   width: 100%;
   border: 0;
-}
-
-/* Titulo principal */
-.titulo {
-  color: green;
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.5em;
-  text-align: center;
-  margin: 1em 0em;
 }
 
 /* Imagenes - Main */
@@ -308,16 +303,6 @@ ul {
 
 .p-transform-1:hover, .p-transform-2:hover, .p-transform-3:hover, .title-transform:hover {
   transform: scale(2);
-}
-
-/* Estilos para Bootstrap */
-.nav-fondo {
-  background: linear-gradient(45deg, #344444, #4d7a7a);
-}
-
-.navbar-light .navbar-nav .nav-link {
-  font-size: 1.5em;
-  color: #72a723;
 }
 
 .carousel {

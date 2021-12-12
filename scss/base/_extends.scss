@@ -6,3 +6,16 @@
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     }
+
+    %estiloLinks{
+        /* Estilo de Links */
+        text-decoration: none;
+        color: rgb(114, 167, 35);
+    }
+
+    %estiloUL{
+        /* Estilo de lista desordenada */
+        list-style: none;
+        font-family: 'Zen Kaku Gothic New', sans-serif;
+        font-weight: bold;
+    }

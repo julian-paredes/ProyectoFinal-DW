@@ -1,5 +1,12 @@
 /* Inicio de archivo css para estilos */
 
+/* Reinicio de estilos */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 @import 'base/extends';
 
 .parrafo-1, .parrafo-2, .p-main-2{
@@ -8,9 +15,24 @@
     
 }
 
+a{
+    @extend %estiloLinks;
+}
+
+ul {
+    @extend %estiloUL;
+}
+
+.titulo {
+    /* Titulo principal */
+    @extend %estiloTextos;
+    font-size: 3.5em;
+    margin: 1em 0em;
+}
 .titulo-contact {
     @extend %estiloTextos;
 }
+
 
 @import 'base/maps';
 
@@ -35,98 +57,10 @@
 .title-transform:hover {
     @include transformaciones(scale(2));
 }
-/* Reinicio de estilos */
 
-* {
-    padding: 0;
-    margin: 0;
-}
+@import 'components/header';
 
-/* Estilo agregar imagen de fondo */
-
-.fondo {
-    background-image: url("../media/images/fondo.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-/* Estilo de links */
-a {
-    text-decoration: none;
-    color: rgb(114, 167, 35);
-    
-}
-
-/* Estilo a lista desordenada */
-ul{
-    list-style: none;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-weight: bold;
-}
-
-
-/* Estilos Header */
-
-
-.box {
-    display: flex;
-    justify-content: center;
-}
-
-
-/* Logo de la pag */
-
-.logo {
-    padding-top: 1em;
-    padding-left: 1em;
-
-}
-
-/* Estilos a clases utilizando flexbox */
-
-.menu-container {
-
-    margin: 1em;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
-}
-
-
-
-/* Carrito */
-
-.carrito {
-    width: 1.5m;
-    height: 1.5em;
-}
-
-/* Estilos - Main */
-/* Imagen Principal */
-
-.img-principal {
-    height: auto;
-    width: 100%;
-    border: 0;
-    
-
-}
-
-/* Titulo principal */
-
-.titulo{
-    color: green;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.5em;
-    text-align: center;
-    margin: 1em 0em;
-}
-
+@import 'components/main';
 
 /* Imagenes - Main */
 .img-container-main {
@@ -350,16 +284,6 @@ ul{
     transform: scale(2);
 }
 
-/* Estilos para Bootstrap */
-
-.nav-fondo {
-    background: linear-gradient(45deg,rgb(52, 68, 68), rgb(77, 122, 122));
-}
-
-.navbar-light .navbar-nav .nav-link {
-    font-size: 1.5em;
-    color: rgb(114, 167, 35);
-}
 
 .carousel {
     

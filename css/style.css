@@ -26,6 +26,30 @@ ul {
   font-weight: bold;
 }
 
+.parrafo-3, .parrafo-4, .p-main-1, .p-main-3 {
+  /* Párrafos */
+  color: #72a723;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prod-fila2-container, .prod-fila1-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.prod1-fila1, .prod2-fila1, .prod1-fila2, .prod2-fila2 {
+  /* Seccion "Productos" - Flexbox - Estilos */
+  text-align: center;
+}
+
+.img-prod-1, .img-prod-2, .img-prod-3, .img-prod-4 {
+  margin-bottom: 1em;
+}
+
 .parrafo-1, .parrafo-2, .p-main-2 {
   font-size: 1.5em;
 }
@@ -34,6 +58,10 @@ ul {
   /* Titulo principal */
   font-size: 3.5em;
   margin: 1em 0em;
+}
+
+.prod-fila1-container {
+  margin-bottom: 2em;
 }
 
 /* Maps*/
@@ -108,106 +136,52 @@ ul {
 }
 
 /* Estilos - Main */
-/* Imagen Principal */
 main .img-principal {
+  /* Imagen Principal */
   height: auto;
   width: 100%;
   border: 0;
 }
-
-/* Imagenes - Main */
-.img-container-main {
-  display: flex;
-  justify-content: space-around;
-  margin: 2em 0em;
-  flex-wrap: wrap;
-}
-
-.img-main-1, .img-main-2, .img-main-3 {
-  display: flex;
-  height: 200px;
-  width: auto;
-}
-
-/* Estilos - Main */
-/* Párrafos */
-.parrafo-3, .parrafo-4, .p-main-1, .p-main-3 {
-  color: #72a723;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.p-container-main {
+main .p-container-main {
   display: flex;
   justify-content: space-around;
   margin-top: 3.5em;
   margin-bottom: 5em;
   flex-wrap: wrap;
 }
-
-.p-main-1, .p-main-2, .p-main-3 {
+main .p-container-main .p-main-1, main .p-container-main .p-main-2, main .p-container-main .p-main-3 {
   font-size: 1.5em;
 }
 
-/*Grid - Seccion "Nosotros" - Estilos*/
 .grid-container-about {
+  /* Seccion "Nosotros" - Estilos - Grid */
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 0px;
 }
-
-.grid-parrafo {
+.grid-container-about .grid-parrafo {
   grid-area: 1/1/2/2;
 }
-
-.grid-imagen {
+.grid-container-about .grid-parrafo .parrafo-about {
+  align-self: center;
+}
+.grid-container-about .grid-imagen {
   grid-area: 1/2/2/3;
 }
-
-.img-about {
+.grid-container-about .grid-imagen .img-about {
   height: auto;
   width: 100%;
 }
 
-.parrafo-about {
-  align-self: center;
-}
-
-/* Seccion "Productos" - Flexbox - Estilos */
-.prod-fila1-container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-bottom: 2em;
-}
-
-.prod-fila2-container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.prod1-fila1, .prod2-fila1, .prod1-fila2, .prod2-fila2 {
-  text-align: center;
-}
-
-.img-prod-1, .img-prod-2, .img-prod-3, .img-prod-4 {
-  margin-bottom: 1em;
-}
-
-/*Seccion "Contacto" - Estilos - Grid */
 .grid-container-contact {
+  /*Seccion "Contacto" - Estilos - Grid */
   display: grid;
   grid-template-columns: auto auto;
 }
-
-.grid-map {
+.grid-container-contact .grid-map {
   grid-area: 1/1/2/2;
 }
-
-.grid-form {
+.grid-container-contact .grid-form {
   grid-area: 1/2/2/3;
 }
 

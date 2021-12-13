@@ -19,3 +19,26 @@
         font-family: 'Zen Kaku Gothic New', sans-serif;
         font-weight: bold;
     }
+
+    %estiloParrafo {
+        /* Párrafos */
+        color: rgb(114, 167, 35);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    %seccionProd-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    %seccionProd-filas {
+        /* Seccion "Productos" - Flexbox - Estilos */
+        text-align: center;
+    }
+    %seccionProd-img {
+        margin-bottom: 1em;
+    }

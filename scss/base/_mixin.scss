@@ -1,7 +1,9 @@
 /* Mixin */
 @mixin transformaciones($propiedades) {
+    transition: $propiedades;
     transform: $propiedades;
     -webkit-transform: $propiedades;
     -o-transform: $propiedades;
     -moz-transform: $propiedades;
 }
+

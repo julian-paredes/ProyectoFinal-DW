@@ -35,7 +35,7 @@ ul {
   flex-wrap: wrap;
 }
 
-.prod-fila2-container, .prod-fila1-container {
+.carrito-container-1, .carrito-container-2, .carrito-container-3, .prod-fila2-container, .prod-fila1-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -64,6 +64,13 @@ ul {
   margin-bottom: 2em;
 }
 
+.carrito-container-1, .carrito-container-2, .carrito-container-3 {
+  color: #39ca39;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 3em;
+}
+
+/* Fin Extends */
 /* Maps*/
 .img-principal {
   height: auto;
@@ -71,8 +78,19 @@ ul {
   border: 0;
 }
 
+/* Fin Maps */
 /* Mixin */
+/* Transformaciones Parrafos */
+.p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
+  transition: all 1s;
+  transform: all 1s;
+  -webkit-transform: all 1s;
+  -o-transform: all 1s;
+  -moz-transform: all 1s;
+}
+
 .p-transform-1:hover {
+  transition: scale(2);
   transform: scale(2);
   -webkit-transform: scale(2);
   -o-transform: scale(2);
@@ -80,6 +98,7 @@ ul {
 }
 
 .p-transform-2:hover {
+  transition: scale(2);
   transform: scale(2);
   -webkit-transform: scale(2);
   -o-transform: scale(2);
@@ -87,6 +106,7 @@ ul {
 }
 
 .p-transform-3:hover {
+  transition: scale(2);
   transform: scale(2);
   -webkit-transform: scale(2);
   -o-transform: scale(2);
@@ -94,12 +114,14 @@ ul {
 }
 
 .title-transform:hover {
+  transition: scale(2);
   transform: scale(2);
   -webkit-transform: scale(2);
   -o-transform: scale(2);
   -moz-transform: scale(2);
 }
 
+/* Fin Mixin */
 /* Estilos Header */
 .fondo {
   /* Estilo agregar imagen de fondo */
@@ -135,12 +157,19 @@ ul {
   height: 1.5em;
 }
 
+/* Fin Estilos - Header */
 /* Estilos - Main */
 main .img-principal {
   /* Imagen Principal */
   height: auto;
   width: 100%;
   border: 0;
+}
+main .carousel {
+  /* Tamaño del Carousel de BS */
+  width: 75%;
+  height: auto;
+  margin: auto;
 }
 main .p-container-main {
   display: flex;
@@ -185,41 +214,36 @@ main .p-container-main .p-main-1, main .p-container-main .p-main-2, main .p-cont
   grid-area: 1/2/2/3;
 }
 
-/* Seccion "Carrito" - Estilos */
-.carrito-titulo {
+.carrito-main .carrito-titulo {
+  /* Seccion "Carrito" - Estilos */
   text-align: start;
   margin-left: 2em;
 }
-
-.carrito-container-1, .carrito-container-2, .carrito-container-3 {
-  display: flex;
-  justify-content: space-evenly;
-  color: #39ca39;
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 3em;
-  flex-wrap: wrap;
-}
-
-.name-carrito-1, .name-carrito-2, .name-carrito-3 {
+.carrito-main .name-carrito-1, .carrito-main .name-carrito-2, .carrito-main .name-carrito-3 {
   text-align: center;
   align-self: center;
 }
-
-.titulo-carrito-prod1, .titulo-carrito-prod2, .titulo-carrito-prod3 {
+.carrito-main .titulo-carrito-prod1, .carrito-main .titulo-carrito-prod2, .carrito-main .titulo-carrito-prod3 {
   margin-bottom: 2em;
 }
-
-.button-container {
+.carrito-main .button-container {
   display: flex;
   justify-content: center;
 }
-
-.button-buy {
+.carrito-main .button-buy {
   display: flex;
 }
 
-/* Footer */
-.terminos {
+/* Fin Estilos - Main */
+/* Estilos - Footer */
+footer .footer-menu-container {
+  /* Footer - Estilo con Flexbox */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+footer .footer-menu-container .terminos {
   color: #72a723;
   font-size: 1.5em;
   font-family: "Zen Kaku Gothic New", sans-serif;
@@ -227,9 +251,13 @@ main .p-container-main .p-main-1, main .p-container-main .p-main-2, main .p-cont
   display: flex;
   justify-content: start;
 }
-
-/* Contacto WhatsApp */
-.wsp-container {
+footer .footer-menu-container .footer-terminos {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+}
+footer .wsp-container {
+  /* Contacto WhatsApp */
   position: fixed;
   right: 1px;
   bottom: 1px;
@@ -237,8 +265,7 @@ main .p-container-main .p-main-1, main .p-container-main .p-main-2, main .p-cont
   justify-content: right;
   z-index: 100;
 }
-
-.wsp {
+footer .wsp-container .wsp {
   width: 60px;
   height: 60px;
   background-color: #72a723;
@@ -250,41 +277,12 @@ main .p-container-main .p-main-1, main .p-container-main .p-main-2, main .p-cont
   margin-right: 2em;
   margin-bottom: 2em;
 }
-
-.wsp-container .wsp img {
+footer .wsp-container .wsp img {
   width: 80%;
   height: 80%;
 }
 
-/* Footer - Estilo con Flexbox */
-.footer-terminos {
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.5em;
-}
-
-.footer-menu-container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-/* Transformaciones Parrafos */
-.p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
-  transition: all 1s;
-}
-
-.p-transform-1:hover, .p-transform-2:hover, .p-transform-3:hover, .title-transform:hover {
-  transform: scale(2);
-}
-
-.carousel {
-  width: 75%;
-  height: auto;
-  margin: auto;
-}
-
+/* Fin Estilos - Footer */
 /* MediaQueries para Tablets */
 @media only screen and (min-width: 500px) and (max-width: 978px) {
   .p-transform-1, .p-transform-2, .p-transform-3, .title-transform {

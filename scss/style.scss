@@ -57,7 +57,13 @@ ul {
     @extend %seccionProd-img;
 }
 
-
+.carrito-container-1, .carrito-container-2, .carrito-container-3 {
+    @extend %seccionProd-container;
+    color: rgb(57, 202, 57);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 3em;
+}
+/* Fin Extends */
 
 @import 'base/maps';
 
@@ -67,7 +73,14 @@ ul {
     border: map-get($imagenPrincipal, img-border);
 }
 
+/* Fin Maps */
+
 @import 'base/mixin'; 
+/* Transformaciones Parrafos */
+
+.p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
+    @include transformaciones(all 1s);
+}
 
 .p-transform-1:hover{
     @include transformaciones(scale(2));
@@ -83,130 +96,14 @@ ul {
     @include transformaciones(scale(2));
 }
 
+/* Fin Mixin */
+
 @import 'components/header';
 
 @import 'components/main';
 
+@import 'components/footer';
 
-/* Seccion "Carrito" - Estilos */
-
-.carrito-titulo {
-    text-align: start;
-    margin-left: 2em;
-}
-
-.carrito-container-1, .carrito-container-2, .carrito-container-3 {
-    display: flex;
-    justify-content: space-evenly;
-    color: rgb(57, 202, 57);
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 3em;
-    flex-wrap: wrap;
-}
-
-.name-carrito-1, .name-carrito-2, .name-carrito-3 {
-    
-    text-align: center;
-    align-self: center;
-    
-}
-
-.titulo-carrito-prod1, .titulo-carrito-prod2, .titulo-carrito-prod3 {
-    margin-bottom: 2em;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    
-
-}
-.button-buy {
-    display: flex;
-    
-
-}
-
-/* Footer */
-
-.terminos{
-    color: rgb(114, 167, 35);
-    font-size: 1.5em;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-weight: bold;
-    display: flex;
-    justify-content: start;
-
-}
-
-/* Contacto WhatsApp */
-
-.wsp-container{
-    position: fixed;
-    right: 1px;
-    bottom: 1px;
-    display: flex;
-    justify-content: right;
-    z-index: 100;
-    
-}
-
-.wsp {
-    
-    width: 60px;
-    height: 60px;
-    background-color: rgb(114, 167, 35);
-    border: 1px solid black;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2em;
-    margin-bottom: 2em;
-
-}
-
-.wsp-container .wsp img {
-    width: 80%;
-    height: 80%;
-}
-
-
-/* Footer - Estilo con Flexbox */
-
-.footer-terminos {
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.5em;
-}
-
-.footer-menu-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-/* Transformaciones Parrafos */
-
-.p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
-
-    transition: all 1s;
-}
-
-.p-transform-1:hover, .p-transform-2:hover, .p-transform-3:hover, .title-transform:hover {
-    transform: scale(2);
-}
-
-
-.carousel {
-    
-    width: 75%;
-    height: auto;
-    margin: auto;
-}
-
-    
 /* MediaQueries para Tablets */
 
 @media only screen and (min-width: 500px) and (max-width: 978px) {

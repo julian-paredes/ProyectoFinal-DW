@@ -236,14 +236,14 @@ main .p-container-main .p-main-1, main .p-container-main .p-main-2, main .p-cont
 
 /* Fin Estilos - Main */
 /* Estilos - Footer */
-footer .footer-menu-container {
+.footer-menu-container {
   /* Footer - Estilo con Flexbox */
   display: flex;
   justify-content: space-around;
   margin-top: 2em;
   margin-bottom: 2em;
 }
-footer .footer-menu-container .terminos {
+.footer-menu-container .terminos {
   color: #72a723;
   font-size: 1.5em;
   font-family: "Zen Kaku Gothic New", sans-serif;
@@ -251,12 +251,13 @@ footer .footer-menu-container .terminos {
   display: flex;
   justify-content: start;
 }
-footer .footer-menu-container .footer-terminos {
+.footer-menu-container .footer-terminos {
   display: flex;
   justify-content: space-around;
   font-size: 1.5em;
 }
-footer .wsp-container {
+
+.wsp-container {
   /* Contacto WhatsApp */
   position: fixed;
   right: 1px;
@@ -265,7 +266,8 @@ footer .wsp-container {
   justify-content: right;
   z-index: 100;
 }
-footer .wsp-container .wsp {
+
+.wsp {
   width: 60px;
   height: 60px;
   background-color: #72a723;
@@ -277,14 +279,14 @@ footer .wsp-container .wsp {
   margin-right: 2em;
   margin-bottom: 2em;
 }
-footer .wsp-container .wsp img {
+.wsp .imagen-wsp {
   width: 80%;
   height: 80%;
 }
 
 /* Fin Estilos - Footer */
 /* MediaQueries para Tablets */
-@media only screen and (min-width: 500px) and (max-width: 978px) {
+@media screen and (min-width: 500px) and (max-width: 978px) {
   .p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
     transition: none !important;
     transform: none !important;
@@ -304,7 +306,7 @@ footer .wsp-container .wsp img {
   }
 }
 /* Media Queries para Mobiles */
-@media only screen and (max-width: 499px) {
+@media screen and (max-width: 499px) {
   .p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
     /* Eliminacion de transformaciones en Mobiles */
     transition: none !important;
@@ -323,8 +325,7 @@ footer .wsp-container .wsp img {
   }
 
   .terminos, .footer-terminos {
-    /* Ajuste del tamaño de los parrafos del footer */
-    font-size: 0.85em;
+    font-size: 0.8em;
   }
 
   .parrafo-1, .parrafo-2 {

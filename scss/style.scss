@@ -76,26 +76,34 @@ ul {
 /* Fin Maps */
 
 @import 'base/mixin'; 
-/* Transformaciones Parrafos */
+/* Transformaciones - Parrafos */
 
 .p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
     @include transformaciones(all 1s);
 }
 
+/* Transformaciones - Productos */
+.prod1-fila1, .prod2-fila1, .prod1-fila2, .prod2-fila2 {
+    @include transformaciones(all 0.5s);
+}
+
 .p-transform-1:hover{
-    @include transformaciones(scale(2));
+    @include transformaciones(scale(1.6));
 }
 
 .p-transform-2:hover {
-    @include transformaciones(scale(2));
+    @include transformaciones(scale(1.6));
 }
 .p-transform-3:hover {
-    @include transformaciones(scale(2));
+    @include transformaciones(scale(1.6));
 }
 .title-transform:hover {
-    @include transformaciones(scale(2));
+    @include transformaciones(scale(1.3) skew(10deg,10deg));
 }
 
+.prod1-fila1:hover, .prod2-fila1:hover, .prod1-fila2:hover, .prod2-fila2:hover {
+    @include transformaciones(scale(1.1));
+}
 /* Fin Mixin */
 
 @import 'components/header';

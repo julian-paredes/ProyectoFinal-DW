@@ -19,7 +19,7 @@
     }
   }
   /* Media Queries para Mobiles */
-  @media screen and (max-width: 499px) {
+  @media screen and (max-width: 500px) {
     .p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
       /* Eliminacion de transformaciones en Mobiles */
       transition: none !important;
@@ -45,6 +45,10 @@
       /* Ajuste del tamaño de los parrafos en general para mobiles */
       font-size: 1em;
     }
+      /*Ajuste del corrimiento de la fila 2 de los productos por tamaño de imagenes */
+    .prod-fila2-container{ 
+      padding-left: 0px !important;
+  }
   
     .grid-container-about {
       /* Eliminacion del grid para mobiles y desplazamiento de imagen en seccion "Nosotros" */

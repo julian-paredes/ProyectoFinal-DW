@@ -27,7 +27,13 @@ main {
             font-size: 1.5em;
         }
     }
+
+    .prod-fila2-container{
+        padding-left: 50px;
+    }
 }
+
+
 
 .grid-container-about {
     
@@ -62,6 +68,14 @@ main {
         }
         .grid-form {
             grid-area: 1 / 2 / 2 / 3;
+            .form-contact {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .name-contact, .email-contact {
+                    margin-bottom: 2em;
+                }
+            }
         }
 }
 

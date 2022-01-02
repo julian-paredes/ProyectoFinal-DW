@@ -1,7 +1,7 @@
 /* Estilos Header */
 
 .fondo {
- /* Estilo agregar imagen de fondo */
+ /* Estilos para imagen de fondo */
     background-image: url("../media/images/fondo.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -23,12 +23,13 @@
                     font-size: 1.5em;
                     color: rgb(114, 167, 35);
                     &:hover {
+                        /* Cuando se pasa por los elementos del navbar, se subrayan y se cambian a otro color */
                         text-decoration: underline;
                         color: greenyellow;
                     }
                         }
                     .carrito {
-                        /* Carrito */
+                        /* Ajuste del tamaño del carrito */
                         width: 1.5m;
                         height: 1.5em;
                     }

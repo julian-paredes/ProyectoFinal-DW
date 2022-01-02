@@ -8,6 +8,7 @@
 
 /* Extends */
 .titulo-contact, .titulo, .parrafo-1, .parrafo-2, .p-main-2 {
+  /* Estilo para textos */
   color: #39ca39;
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -20,14 +21,14 @@ a {
 }
 
 ul {
-  /* Estilo de lista desordenada */
+  /* Estilo para lista desordenada */
   list-style: none;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: bold;
 }
 
 .parrafo-3, .parrafo-4, .p-main-1, .p-main-3 {
-  /* Párrafos */
+  /* Estilo para Párrafos */
   color: #72a723;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
@@ -36,6 +37,7 @@ ul {
 }
 
 .carrito-container-1, .carrito-container-2, .carrito-container-3, .prod-fila2-container, .prod-fila1-container {
+  /* Estilo para contenedores de productos */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -145,7 +147,7 @@ ul {
 /* Fin Mixin */
 /* Estilos Header */
 .fondo {
-  /* Estilo agregar imagen de fondo */
+  /* Estilos para imagen de fondo */
   background-image: url("../media/images/fondo.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -169,11 +171,12 @@ ul {
   color: #72a723;
 }
 .fondo .nav-fondo .nav-link:hover {
+  /* Cuando se pasa por los elementos del navbar, se subrayan y se cambian a otro color */
   text-decoration: underline;
   color: greenyellow;
 }
 .fondo .nav-fondo .carrito {
-  /* Carrito */
+  /* Ajuste del tamaño del carrito */
   width: 1.5m;
   height: 1.5em;
 }
@@ -204,6 +207,9 @@ main .p-container-main .p-main-1, main .p-container-main .p-main-2, main .p-cont
 }
 main .prod-fila2-container {
   padding-left: 50px;
+}
+main .accordion {
+  /* Estilos para acordeon en seccion FAQ */
 }
 main .accordion .accordion-button {
   background: linear-gradient(-45deg, #000000, #0b3333);
@@ -309,7 +315,7 @@ main .accordion .respuesta-1 {
 }
 
 .wsp-container {
-  /* Contacto WhatsApp */
+  /* Estilos para opcion de contacto por WhatsApp */
   position: fixed;
   right: 1px;
   bottom: 1px;
@@ -338,9 +344,19 @@ main .accordion .respuesta-1 {
 /* Fin Estilos - Footer */
 /* MediaQueries para Tablets */
 @media screen and (min-width: 500px) and (max-width: 978px) {
-  .p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
+  .p-transform-1, .p-transform-2, .p-transform-3, .title-transform, .prod1-fila1, .prod1-fila2, .prod2-fila1, .prod2-fila2 {
     transition: none !important;
     transform: none !important;
+  }
+
+  .prod1-fila2 {
+    /* Correccion margin en Tablet Ipad */
+    margin-bottom: 2em;
+  }
+
+  .parrafo-about {
+    /* Correccion tamaño fuente en seccion Contacto para tablet Ipad */
+    font-size: 1.2em;
   }
 
   .wsp {
@@ -358,7 +374,7 @@ main .accordion .respuesta-1 {
 }
 /* Media Queries para Mobiles */
 @media screen and (max-width: 500px) {
-  .p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
+  .p-transform-1, .p-transform-2, .p-transform-3, .title-transform, .prod1-fila1, .prod1-fila2, .prod2-fila1, .prod2-fila2 {
     /* Eliminacion de transformaciones en Mobiles */
     transition: none !important;
     transform: none !important;
@@ -376,6 +392,7 @@ main .accordion .respuesta-1 {
   }
 
   .terminos-2 {
+    /* Ajuste del tamaño del footer para mobiles */
     font-size: 0.8em;
   }
 
@@ -396,7 +413,7 @@ main .accordion .respuesta-1 {
   }
 
   .grid-container-contact {
-    /* Eliminacion del grip para mobile en seccion "Contacto" */
+    /* Eliminacion del grid para mobile en seccion "Contacto" */
     display: flex;
     flex-wrap: wrap;
   }
@@ -435,7 +452,7 @@ main .accordion .respuesta-1 {
   }
 
   .wsp {
-    /* Modificacion de tamaño de boton de WhatsApp */
+    /* Modificacion de tamaño de boton de WhatsApp para mobiles */
     width: 40px;
     height: 40px;
     margin-right: 0em;

@@ -1,8 +1,18 @@
 /* MediaQueries para Tablets */
 @media screen and (min-width: 500px) and (max-width: 978px) {
-    .p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
+    .p-transform-1, .p-transform-2, .p-transform-3, .title-transform, .prod1-fila1, .prod1-fila2, .prod2-fila1, .prod2-fila2 {
       transition: none !important;
       transform: none !important;
+    }
+
+    .prod1-fila2 {
+      /* Correccion margin en Tablet Ipad */
+      margin-bottom: 2em;
+    }
+
+    .parrafo-about {
+      /* Correccion tamaño fuente en seccion Contacto para tablet Ipad */
+      font-size: 1.2em;
     }
   
     .wsp {
@@ -20,7 +30,7 @@
   }
   /* Media Queries para Mobiles */
   @media screen and (max-width: 500px) {
-    .p-transform-1, .p-transform-2, .p-transform-3, .title-transform {
+    .p-transform-1, .p-transform-2, .p-transform-3, .title-transform, .prod1-fila1, .prod1-fila2, .prod2-fila1, .prod2-fila2 {
       /* Eliminacion de transformaciones en Mobiles */
       transition: none !important;
       transform: none !important;
@@ -38,6 +48,7 @@
     }
   
     .terminos-2 {
+      /* Ajuste del tamaño del footer para mobiles */
     font-size: 0.8em;
     }
   
@@ -57,7 +68,7 @@
     }
   
     .grid-container-contact {
-      /* Eliminacion del grip para mobile en seccion "Contacto" */
+      /* Eliminacion del grid para mobile en seccion "Contacto" */
       display: flex;
       flex-wrap: wrap;
     }
@@ -96,7 +107,7 @@
     }
   
     .wsp {
-      /* Modificacion de tamaño de boton de WhatsApp */
+      /* Modificacion de tamaño de boton de WhatsApp para mobiles */
       width: 40px;
       height: 40px;
       margin-right: 0em;

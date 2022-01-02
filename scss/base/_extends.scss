@@ -2,6 +2,7 @@
 
 
     %estiloTextos {
+        /* Estilo para textos */
     color: rgb(57, 202, 57);
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -14,14 +15,14 @@
     }
 
     %estiloUL{
-        /* Estilo de lista desordenada */
+        /* Estilo para lista desordenada */
         list-style: none;
         font-family: 'Zen Kaku Gothic New', sans-serif;
         font-weight: bold;
     }
 
     %estiloParrafo {
-        /* Párrafos */
+        /* Estilo para Párrafos */
         color: rgb(114, 167, 35);
         font-family: 'Montserrat', sans-serif;
         font-size: 1.5em;
@@ -30,6 +31,7 @@
     }
 
     %seccionProd-container {
+        /* Estilo para contenedores de productos */
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;

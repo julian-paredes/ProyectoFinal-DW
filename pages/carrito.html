@@ -65,50 +65,64 @@
     <!-- Inicio del main -->
     <main class="carrito-main">
         <h1 class="titulo carrito-titulo">Carrito:</h1> <!-- Titulo de carrito-->
-        <!--Aqui va separador -->
 
-        <div class="carrito-container-1">
-            <div class="carrito-1">
+        <!-- BS - Grid System Carrito -->
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="carrito-1">
                 <img src="../media/images/software.png" alt="imagen-de-producto-1" class="img-carrito-1">         <!-- Imagen de producto 1 -->
+              </div>
             </div>
-            <div class="name-carrito-1">
+
+            <div class="col carrito-container-1">
+              <div class="name-carrito-1">
                 <h3 class="titulo-carrito-prod1">Software Atom Guitar</h3>
-                <!-- AQUI VA BOTON DE ELIMINAR PRODUCTO NRO 1 -->
+                <!-- BOTON DE ELIMINAR PRODUCTO NRO 1 -->
                 <button type="button" class="btn btn-success">ELIMINAR</button>
+              </div>
             </div>
-        </div>
-        <!--Aqui va separador -->
-
-        <div class="carrito-container-2">
-            <div class="carrito-2">
-                <img src="../media/images/pedalera.png" alt="imagen-de-producto-2" class="img-carrito-2">         <!-- Imagen de producto 1 -->
+            <div class="w-100 separate"></div>
+            <div class="col">
+              <div class="carrito-2">
+                <img src="../media/images/pedalera.png" alt="imagen-de-producto-2" class="img-carrito-2">         <!-- Imagen de producto 2 -->
+              </div>
             </div>
-            <div class="name-carrito-2">
+            <div class="col carrito-container-2">
+              <div class="name-carrito-2">
                 <h3 class="titulo-carrito-prod2">Pedalera</h3>
-                <!-- AQUI VA BOTON DE ELIMINAR PRODUCTO NRO 1 -->
+                <!-- BOTON DE ELIMINAR PRODUCTO NRO 2 -->
                 <button type="button" class="btn btn-success">ELIMINAR</button>
+              </div>
             </div>
+            <div class="w-100 separate"></div>
+            <div class="col">
+              <div class="carrito-3">
+                <img src="../media/images/loopera.png" alt="imagen-de-producto-3" class="img-carrito-3">         <!-- Imagen de producto 3 -->
+            </div>
+            </div>
+            <div class="col carrito-container-3">
+              <div class="name-carrito-3">
+                <h3 class="titulo-carrito-prod3">Pedal de Pistas</h3>
+                <!-- BOTON DE ELIMINAR PRODUCTO NRO 3 -->
+                <button type="button" class="btn btn-success">ELIMINAR</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!--Aqui va separador -->
-
-        <div class="carrito-container-3">
-            <div class="carrito-3">
-                <img src="../media/images/pedal_y_loop.PNG" alt="imagen-de-producto-3" class="img-carrito-3">         <!-- Imagen de producto 1 -->
-            </div>
-            <div class="name-carrito-3">
-                <h3 class="titulo-carrito-prod3">Pedal + Pedal de Pistas</h3>
-                <!-- AQUI IRIA BOTON DE ELIMINAR PRODUCTO NRO 1 -->
-                <button type="button" class="btn btn-success">ELIMINAR</button>
-            </div>
-        </div>
-
-        <!--Aqui va separador -->
         <h3 class="titulo carrito-titulo">Total:</h3>
-        <!-- AQUI IRIA BOTON DE COMPRAR Y LLAMARIA A LINK DE MERCADOPAGO EN PRINCIPIO -->
+        <!-- BOTON DE COMPRA -->
         <div class="button-container">
             <button type="button" class="button-buy btn btn-success">COMPRAR</button>
         </div>
+
+        
+
+
+
+
+
     </main>
     <!-- Fin del main-->
 
@@ -120,7 +134,7 @@
         </div>
         <nav class="footer-menu">
           <ul class="footer-terminos">
-              <li><a href="pages/terms.html" class="terminos-2">Informacion Legal</a> </li> <!--Link a seccion de Informacion Legal -->
+              <li><a href="../pages/terms.html" class="terminos-2 terminos-hover">Informacion Legal</a> </li> <!--Link a seccion de Informacion Legal -->
           </ul>
         <nav>
       </section>

@@ -66,16 +66,93 @@
     <!-- Inicio del main -->
     <main>
         <h1 class="titulo">Preguntas frecuentes:</h1>       <!-- Titulo de FAQ -->
-        <ul>    <!-- Contenido de preguntas frecuentes -->
-            <li class="parrafo-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio accusamus nesciunt eaque similique ullam reprehenderit, repellendus sunt quae tempora consequatur fuga exercitationem consequuntur fugiat corporis laudantium, ex voluptates. Quidem, temporibus.</li>
-            <li class="parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum veniam neque asperiores velit recusandae explicabo ipsum eligendi sunt aliquid earum labore fuga, maxime animi natus ullam. Facilis quo nam amet.</li>
-            <li class="parrafo-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus a, omnis nam, quos dolores assumenda aut soluta laborum reprehenderit, libero consectetur ipsa expedita reiciendis rem necessitatibus sapiente quis enim exercitationem!</li>
-            <li class="parrafo-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate harum iure optio pariatur sed, eaque enim repellat recusandae reprehenderit! Atque quae omnis tempore est, molestias quos blanditiis ducimus temporibus accusantium.</li>
-            <li class="parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nisi accusamus aliquid beatae cumque in ad architecto aperiam labore laborum. Debitis porro facilis commodi at saepe dignissimos rem nulla in?</li>
-            <li class="parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugiat illum totam explicabo quia ad cum. Totam enim odit laborum asperiores, dicta corporis non distinctio libero sapiente! Atque, qui dignissimos.</li>
-            <li class="parrafo-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, commodi! Dolorum magnam eum in exercitationem natus quibusdam, incidunt, repellat expedita consequuntur, debitis iste deserunt perferendis quis veritatis id molestias! Quod.</li>
-            <li class="parrafo-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, ut fuga. Ipsum et eius consequatur nihil quia, dolor, voluptatum maiores illo autem, harum molestiae sint ab. Recusandae maxime adipisci amet.</li>
-        </ul>
+        <!-- BS - Acordeon para FAQ -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <p class="parrafo-1">Es el software Atom Guitar gratuito?</p>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body respuesta-1">
+                <p>Existe una versión de prueba que puede solicitar enviándonos un correo, pero la versión completa es paga.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                <p class="parrafo-1">Es compatible el software Atom Guitar con Mac?</p>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body respuesta-1">
+                <p>No. Aun no se encuentra disponible una version para Mac. Solo disponible para Windows.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <p class="parrafo-1">Con cuántos efectos de guitarra cuenta el software Atom Guitar?</p>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body respuesta-1">
+                <p>Actualmente, el software Atom Guitar cuenta con 11 efectos en su version completa: overdrive, simulador de amplificador, simulador de cabinet, delay, reverb, chorus, flanger, vibrato, tremolo, autowah y noise gate.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                <p class="parrafo-1">Es posible grabar con el software Atom Guitar?</p>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body respuesta-1">
+                <p>Si, el sofware cuenta con un reproductor para grabar y reproducir pistas de guitarra y exportarlas como archivos .wav.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                <p class="parrafo-1">Se requiere si o si de una placa externa para utilizar Atom Guitar?</p>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+              <div class="accordion-body respuesta-1">
+                <p>Si bien con una placa de sonido externa, mejorará la latencia del sofware, no es requerida. Con contar con la placa interna de la pc, es suficiente para poder utilizar Atom Guitar, ya que gracias a la disponibilidad de drivers gratuitos como ASIO, minimizan bastante la latencia de la señal.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                <p class="parrafo-1">Cuáles son las características de la pedalera controladora?</p>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+              <div class="accordion-body respuesta-1">
+                <p>La pedalera cuenta con 4 botones para seleccionar efectos y 2 para seleccionar los bancos de efectos. Cuenta con un display LCD para la visualizacion de los bancos y efectos seleccionados, asi como también, el número de banco elegido. El software permite hasta 99 bancos y hasta 4 efectos para controlar. Se energiza el controlador directamente por USB y se sincroniza desde el software.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                <p class="parrafo-1">Cuáles son las características del pedal de pistas?</p>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+              <div class="accordion-body respuesta-1">
+                <p>El pedal de pistas es un pequeño controlador que cuenta con dos botones para avance y reproduccion de pistas de audio .wav. Las pistas solo se colocan en un directorio especifico de Atom Guitar y ya están listas para controlarse con el pedal de pistas. El pedal permite reproducir, detener, avanzar o retroceder pistas, presionando los botones correspondientes. Se energiza el controlador directamente por USB y se sincroniza desde el software.</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </main>
     <!-- Fin del main-->
 
@@ -87,7 +164,7 @@
         </div>
         <nav class="footer-menu">
           <ul class="footer-terminos">
-              <li><a href="pages/terms.html" class="terminos-2">Informacion Legal</a> </li> <!--Link a seccion de Informacion Legal -->
+              <li><a href="../pages/terms.html" class="terminos-2 terminos-hover">Informacion Legal</a> </li> <!--Link a seccion de Informacion Legal -->
           </ul>
         <nav>
       </section>

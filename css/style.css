@@ -146,7 +146,7 @@ ul {
 /* Estilos Header */
 .fondo {
   /* Estilo agregar imagen de fondo */
-  background-image: url("../media/images/fondo.jpg");
+  background-image: url("../media/images/fondo.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -205,6 +205,15 @@ main .p-container-main .p-main-1, main .p-container-main .p-main-2, main .p-cont
 main .prod-fila2-container {
   padding-left: 50px;
 }
+main .accordion .accordion-button {
+  background: linear-gradient(-45deg, #000000, #0b3333);
+}
+main .accordion .respuesta-1 {
+  color: #9ae22d;
+  background: linear-gradient(45deg, #344444, #4d7a7a);
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1.2em;
+}
 
 .grid-container-about {
   /* Seccion "Nosotros" - Estilos - Grid */
@@ -251,6 +260,12 @@ main .prod-fila2-container {
   text-align: start;
   margin-left: 2em;
 }
+.carrito-main .carrito-1, .carrito-main .carrito-2, .carrito-main .carrito-3 {
+  text-align: center;
+}
+.carrito-main .separate {
+  margin-bottom: 3em;
+}
 .carrito-main .name-carrito-1, .carrito-main .name-carrito-2, .carrito-main .name-carrito-3 {
   text-align: center;
   align-self: center;
@@ -287,6 +302,10 @@ main .prod-fila2-container {
   display: flex;
   justify-content: space-around;
   font-size: 1.5em;
+}
+.footer-menu-container .footer-terminos .terminos-hover:hover {
+  text-decoration: underline;
+  color: greenyellow;
 }
 
 .wsp-container {

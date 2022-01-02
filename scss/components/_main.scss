@@ -31,7 +31,21 @@ main {
     .prod-fila2-container{
         padding-left: 50px;
     }
+
+    .accordion {
+        .accordion-button {
+            background: linear-gradient(-45deg, #000000, #0b3333);;
+        }
+        .respuesta-1{
+            color: rgb(154, 226, 45);
+            background: linear-gradient(45deg, #344444, #4d7a7a);
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+            font-size: 1.2em;
+        }
+    }
 }
+
+
 
 
 
@@ -85,6 +99,14 @@ main {
         /* Seccion "Carrito" - Estilos */
         text-align: start;
         margin-left: 2em;
+    }
+
+    .carrito-1, .carrito-2, .carrito-3 {
+        text-align: center;
+    }
+
+    .separate {
+        margin-bottom: 3em;
     }
 
     .name-carrito-1, .name-carrito-2, .name-carrito-3 {

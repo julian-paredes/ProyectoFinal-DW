@@ -294,7 +294,7 @@ main .accordion .respuesta-1 {
   display: flex;
   justify-content: space-around;
   margin-top: 2em;
-  margin-bottom: 2em;
+  padding-top: 1em;
 }
 .footer-menu-container .terminos {
   color: #72a723;
@@ -339,6 +339,11 @@ main .accordion .respuesta-1 {
 .wsp .imagen-wsp {
   width: 80%;
   height: 80%;
+}
+
+.footer-bg {
+  height: 100%;
+  background: linear-gradient(-45deg, #000000, #0b3333);
 }
 
 /* Fin Estilos - Footer */

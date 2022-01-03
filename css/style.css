@@ -364,6 +364,13 @@ main .accordion .respuesta-1 {
     font-size: 1.2em;
   }
 
+  .grid-container-about {
+    /* Eliminacion del grid para mobiles y desplazamiento de imagen en seccion "Nosotros" */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .wsp {
     /* Modificacion de tamaño de boton de WhatsApp */
     width: 50px;
@@ -373,8 +380,14 @@ main .accordion .respuesta-1 {
   }
 
   .wsp-container {
+    /* Correccion de icono WhatsApp para Ipad */
     right: 7px;
     bottom: -27px;
+  }
+
+  .footer-bg {
+    /* Correccion Footer para Ipad */
+    height: 100px;
   }
 }
 /* Media Queries para Mobiles */
@@ -429,7 +442,7 @@ main .accordion .respuesta-1 {
   }
 
   .grid-form {
-    margin-top: 2em;
+    margin: auto;
     font-size: 1em;
   }
 
